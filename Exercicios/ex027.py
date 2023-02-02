@@ -4,7 +4,7 @@ nome = input("Digite seu nome completo: ")
 div = nome.split()
 
 print(
-    f' Nome completo: {nome.title()}\n'
+    f' Nome completo: {nome.title().strip()}\n'
     f'1º Nome: {div[0].title()}\n'
     f'Ultimo Nome: {div[-1].title()}'
 )

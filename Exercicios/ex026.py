@@ -2,10 +2,10 @@
 #Quantas vezes aparece a letra 'A';
 #Em que posição aparece na primeia e ultima ves.
 
-frase = input('Escreva uma frase: ')
+frase = str(input('Escreva uma frase: ')).strip().lower()
 contagem = (frase.count('a'))
-pos1 = (frase.find('a'))
-pos2 = (frase.rfind('a'))
+pos1 = (frase.find('a')+1)
+pos2 = (frase.rfind('a')+1)
 
 print(
     f'Frase: {frase}\n'
